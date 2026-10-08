@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Ambiente;
+use App\Models\Sensor;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -37,6 +38,30 @@ class DatabaseSeeder extends Seeder
             'nome' => 'sala 3',
             'descricao' => 'uma sala de aula',
             'status' => false,
+        ]);
+
+        Sensor::create([
+            'ambiente_id' => 1,
+            'codigo' => 'Temp01',
+            'tipo' => 'temperatura',
+            'descricao' => 'um medidor que regula a temperatura do ambiente',
+            'status' => true,
+        ]);
+        
+        Sensor::create([
+            'ambiente_id' => 2,
+            'codigo' => 'Temp02',
+            'tipo' => 'temperatura',
+            'descricao' => 'um medidor que regula a temperatura do ambiente',
+            'status' => true,
+        ]);
+
+        Sensor::create([
+            'ambiente_id' => 3,
+            'codigo' => 'Temp03',
+            'tipo' => 'temperatura',
+            'descricao' => 'um medidor que regula a temperatura do ambiente',
+            'status' => true,
         ]);
     }
 }
