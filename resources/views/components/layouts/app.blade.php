@@ -23,19 +23,18 @@
       <div class="offcanvas-body bg-dark-subtle">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="{{ route('dashboard') }}">Home</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Ambiente
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Criar <i class="bi bi-house-add-fill"></i></a></li>
-              <li><a class="dropdown-item" href="#">Editar <i class="bi bi-house-gear-fill"></i></a></li>
+              <li><a class="dropdown-item" href="{{ route('ambiente.create') }}">Criar <i class="bi bi-house-add-fill"></i></a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">Index <i class="bi bi-houses-fill"></i></a></li>
+              <li><a class="dropdown-item" href="{{ route('ambiente.Index') }}">Index <i class="bi bi-houses-fill"></i></a></li>
             </ul>
           </li>
 
@@ -44,12 +43,11 @@
               Sensor
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Criar <i class="bi bi-bookmark-plus-fill"></i></a></li>
-              <li><a class="dropdown-item" href="#">Editar <i class="bi bi-bookmark-star-fill"></i></a></li>
+              <li><a class="dropdown-item" href="{{ route('sensor.create') }}">Criar <i class="bi bi-bookmark-plus-fill"></i></a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">Index <i class="bi bi-bookmark-fill"></i></a></li>
+              <li><a class="dropdown-item" href="{{ route('sensor.Index') }}">Index <i class="bi bi-bookmark-fill"></i></a></li>
             </ul>
           </li>
           
